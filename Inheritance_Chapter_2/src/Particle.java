@@ -1,7 +1,7 @@
 package src;
 
 abstract public class Particle {
-    double y, v, t;
+    double x, y, v, t;
     double dt;
 
     public Particle() {

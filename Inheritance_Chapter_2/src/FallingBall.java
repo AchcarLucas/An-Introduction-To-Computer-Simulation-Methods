@@ -13,8 +13,8 @@ public class FallingBall extends Particle {
     }
 
     public void step() {
-        y = y + v * t;
-        v = v - g * t;
+        y = y + v * dt;
+        v = v - g * dt;
         t = t + dt;
     }
 
@@ -23,6 +23,6 @@ public class FallingBall extends Particle {
     }
 
     public double analyticVelocity() {
-        return v0 + v * t;
+        return v0 - g * t;
     }
 }
